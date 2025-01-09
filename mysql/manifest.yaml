@@ -54,7 +54,8 @@ spec:
         image: supraspace/mysql:v1
         volumeMounts:
         - name: mysql
-          mountPath: /var/lib/mysql
+          # mountPath: /var/lib/mysql
+          mountPath: /usr/sbin/mysqld
   volumeClaimTemplates:
   - metadata:
       name: mysql
